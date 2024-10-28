@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Generate Reports</h2>
+    <form (ngSubmit)="generateReports()">
+      <div class="form-group">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" class="form-control" [(ngModel)]="startDate" name="startDate" required>
+      </div>
+      <div class="form-group">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" class="form-control" [(ngModel)]="endDate" name="endDate" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Generate Report</button>
+    </form>
+  
+    <div *ngIf="report.length > 0" class="mt-4">
+      <h3>Report Results</h3>
+      <div *ngFor="let item of report" class="report-item">
+        <p><strong>Type:</strong> {{ item._id }}</p>
+        <p><strong>Total Amount:</strong> {{ item.total_amount }}</p>
+        <p><strong>count:</strong> {{ item.count }}</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,13 @@
+/* withdraw.component.css */
+
+.container {
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #dc3545;
+}
+
+button {
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>Admin Transactions</h2>
+    <form (ngSubmit)="getAdminTransactions()">
+      <div class="form-group">
+        <label for="transactionType">Transaction Type:</label>
+        <select id="transactionType" class="form-control" [(ngModel)]="transactionType" name="transactionType">
+          <option value="">All</option>
+          <option value="deposit">Deposit</option>
+          <option value="withdrawal">Withdrawal</option>
+          <option value="transfer">Transfer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" class="form-control" [(ngModel)]="startDate" name="startDate">
+      </div>
+      <div class="form-group">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" class="form-control" [(ngModel)]="endDate" name="endDate">
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  
+    <div *ngIf="transactions.length > 0" class="mt-4">
+      <h3>Transaction Results</h3>
+      <div *ngFor="let transaction of transactions" class="transaction">
+        <p><strong>Type:</strong> {{ transaction.type }}</p>
+        <p><strong>Date:</strong> {{ transaction.date }}</p>
+        <p><strong>Amount:</strong> {{ transaction.amount }}</p>
+        <p><strong>Description:</strong> {{ transaction.description }}</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  

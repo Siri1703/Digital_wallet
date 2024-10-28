@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Create a New Wallet</h2>
+    <form (ngSubmit)="createWallet()">
+      <div class="form-group">
+        <label for="walletName">Wallet Name:</label>
+        <input type="text" id="walletName" class="form-control" [(ngModel)]="walletName" name="walletName" required>
+      </div>
+      <div class="form-group">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" class="form-control" [(ngModel)]="userId" name="userId" required>
+      </div>
+      <div class="form-group">
+        <label for="userId">Wallet ID:</label>
+        <input type="text" id="userId" class="form-control" [(ngModel)]="walletId" name="userId" required>
+      </div>
+      <div class="form-group">
+        <label for="userId">Email:</label>
+        <input type="text" id="userId" class="form-control" [(ngModel)]="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="userId">Contact:</label>
+        <input type="text" id="userId" class="form-control" [(ngModel)]="contact" name="contact" required>
+      </div>
+      <div class="form-group">
+        <label for="userId">Balance(INR):</label>
+        <input type="text" id="userId" class="form-control" [(ngModel)]="balance" name="balance" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Wallet</button>
+    </form>
+  </div>
+  

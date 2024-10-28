@@ -1,0 +1,14 @@
+/* admin-reports.component.css */
+
+.container {
+    border: 1px solid #ddd;
+}
+
+.report-item {
+    border-left: 4px solid #ffc107;
+    padding-left: 10px;
+}
+
+h2 {
+    color: #28a745;
+}

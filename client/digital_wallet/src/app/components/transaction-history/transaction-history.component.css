@@ -1,0 +1,14 @@
+/* transaction-history.component.css */
+
+.container {
+    border: 1px solid #ddd;
+}
+
+.transaction {
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+h2 {
+    color: #6c757d;
+}

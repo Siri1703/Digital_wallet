@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Transfer Funds</h2>
+    <form (ngSubmit)="transfer()">
+      <div class="form-group">
+        <label for="recipientWalletId">Recipient Wallet ID:</label>
+        <input type="text" id="recipientWalletId" class="form-control" [(ngModel)]="recipientWalletId" name="recipientWalletId" required>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" class="form-control" [(ngModel)]="amount" name="amount" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Transfer</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,13 @@
+/* transfer.component.css */
+
+.container {
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #ffc107;
+}
+
+button {
+    width: 100%;
+}

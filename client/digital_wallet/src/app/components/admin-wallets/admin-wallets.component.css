@@ -1,0 +1,14 @@
+/* admin-wallets.component.css */
+
+.container {
+    border: 1px solid #ddd;
+}
+
+.wallet {
+    border-left: 4px solid #28a745;
+    padding-left: 10px;
+}
+
+h2 {
+    color: #007bff;
+}

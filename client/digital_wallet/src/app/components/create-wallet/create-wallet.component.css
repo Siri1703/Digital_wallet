@@ -1,0 +1,13 @@
+/* create-wallet.component.css */
+
+.container {
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #007bff;
+}
+
+button {
+    width: 100%;
+}
