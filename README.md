@@ -4,16 +4,16 @@
 Create a digital wallet management application that allows users to create and manage wallets, make transactions (deposits, withdrawals, and transfers), and view transaction histories. The system should include an admin dashboard to oversee and manage user activities.
 
 # User Endpoints:
-`POST /wallets:` Create a new wallet.
-`POST /wallets/{wallet_id}/deposit:` Deposit funds into a wallet.
-`POST /wallets/{wallet_id}/withdraw:` Withdraw funds from a wallet.
-`POST /wallets/{wallet_id}/transfer:` Transfer funds to another wallet.
-`GET /wallets/{wallet_id}/transactions:` Retrieve transaction history for a specific wallet.
+`POST /wallets:` Create a new wallet.<br>
+`POST /deposit/:walletId` Deposit funds into a wallet.<br>
+`POST /withdraw/:walletId` Withdraw funds from a wallet.<br>
+`POST /transfer/:walletId` Transfer funds to another wallet.<br>
+`GET /transactions/:walletId` Retrieve transaction history for a specific wallet.<br>
 # Admin Endpoints:
-`GET /admin/wallets:` Retrieve a list of all wallets with basic details.
-`GET /admin/transactions:` Retrieve all transactions with filters (e.g., transaction type, date range).
-`PUT /admin/wallets/{wallet_id}/suspend: `Suspend a wallet for suspicious activity.
-`GET /admin/reports: `Generate reports on deposits, withdrawals, and transfers over a given time period.
+`GET /admin/wallets:` Retrieve a list of all wallets with basic details.<br>
+`GET /admin/transactions:` Retrieve all transactions with filters (e.g., transaction type, date range).<br>
+`PUT /admin/wallets/{wallet_id}/suspend: `Suspend a wallet for suspicious activity.<br>
+`GET /admin/reports: `Generate reports on deposits, withdrawals, and transfers over a given time period.<br>
 
 ## Setup:
 
@@ -40,5 +40,8 @@ Create a digital wallet management application that allows users to create and m
 `http://localhost:4200/admin/transactions`
 `http://localhost:4200/admin/reports`
 `http://localhost:4200/admin/suspend/:walletId`
+
+# Note:
+Add CORS extension to the chrome for running the application
 
 
